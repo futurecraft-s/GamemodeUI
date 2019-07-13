@@ -1,6 +1,6 @@
 <?php
 
-namespace GamemodeUI;
+namespace Sell;
 
 use pocketmine\Player;
 use pocketmine\Server;
@@ -18,8 +18,8 @@ Class Main extends PluginBase{
   }
   
   public function onCommand(CommandSender $sender, Command $command, String $label, array $args) : bool {
-    if($command->getName() === "gmui"){
-      if($sender->hasPermission("gmui.cmd")){
+    if($command->getName() === "sellui"){
+      if($sender->hasPermission("sellui.cmd")){
         $formapi = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $form = $formapi->createCustomForm(function(Player $sender, $data){
           $result = $data[0];
