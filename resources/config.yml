@@ -3,19 +3,19 @@
 #Use "§" as a color symbol
 #Use "\n" to go to the next line
 #The title of the menu
-Title: "§lGamemodeUI"
+Title: "§lSellUI"
 
 #Message when changing gamemode to creative
-msg-creative: "Changing Gamemode To Creatvie"
+msg-Hand: "Sold"
 
 #Message when changing gamemode to Survival
-msg-survival: "Changing Gamemode To survival"
+msg-All: "Sold"
 
 #Message when changing gamemode to Adventure
-msg-adventure: "Changing Gamemode To Adventure"
+msg-Inv: "Sold"
 
 #Message when changing gamemode to spectator
-msg-spectator: "Changing Gamemode To Spectator"
+msg-Shop: "Buy items"
 
 #Message when player didn't have perm
 msg-no-perm: "§cYou didn't have permission to use this command!"
