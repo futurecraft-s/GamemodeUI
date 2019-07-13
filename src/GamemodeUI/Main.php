@@ -14,7 +14,7 @@ use jojoe77777\FormAPI;
 Class Main extends PluginBase{
   
   public function onEnable(){
-    $this->getLogger()->info("§aEnable §bGamemodeUI...");
+    $this->getLogger()->info("§aEnable §bSellUI...");
   }
   
   public function onCommand(CommandSender $sender, Command $command, String $label, array $args) : bool {
@@ -28,22 +28,22 @@ Class Main extends PluginBase{
             case 0:
               break;
             case 1:
-              $sender->sendMessage($this->getConfig()->get("msg-creative"));
+              $sender->sendMessage($this->getConfig()->get("msg-Hand"));
               $sender->addTitle("§eSell Hand", "§fSell your hand");
               $sender->sell hand;
               break;
             case 2:
-              $sender->sendMessage($this->getConfig()->get("msg-survival"));
+              $sender->sendMessage($this->getConfig()->get("msg-All"));
               $sender->addTitle("§eSell All", "§fSell all of the chosen block");
               $sender->sell all;
               break;
             case 3:
-              $sender->sendMessage($this->getConfig()->get("msg-adventure"));
+              $sender->sendMessage($this->getConfig()->get("msg-Inv"));
               $sender->addTitle("§eSell Inv", "§fSell everything");
               $sender->sell inv;
               break;
             case 4:
-              $sender->sendMessage($this->getConfig()->get("msg-spectator"));
+              $sender->sendMessage($this->getConfig()->get("msg-Shop"));
               $sender->addTitle("§eShop", "§fBuy items");
               $sender->shop;
               default:
