@@ -29,8 +29,8 @@ Class Main extends PluginBase{
               break;
             case 1:
               $sender->sendMessage($this->getConfig()->get("msg-creative"));
-              $sender->addTitle("§eCreative mode", "§fCreative mode is enable");
-              $sender->setGamemode(1);
+              $sender->addTitle("§eSell Hand", "§fSell your hand");
+              $sender->sellHand;
               break;
             case 2:
               $sender->sendMessage($this->getConfig()->get("msg-survival"));
@@ -52,7 +52,7 @@ Class Main extends PluginBase{
            }
           });
           $form->setTitle($this->getConfig()->get("Title"));
-          $form->addDropdown("Menu", ["Exit", "Creative", "Survival", "Adventure", "Spectator"]);
+          $form->addDropdown("Menu", ["Exit", "Sell Hand", "Sell Ores", "sell Inventory", "Shop"]);
           $form->sendToPlayer($sender);
       } else {
         $sender->sendMessage($this->getConfig()->get("msg-no-perm"));
