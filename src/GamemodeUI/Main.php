@@ -30,29 +30,29 @@ Class Main extends PluginBase{
             case 1:
               $sender->sendMessage($this->getConfig()->get("msg-creative"));
               $sender->addTitle("§eSell Hand", "§fSell your hand");
-              $sender->sellHand;
+              $sender->sell hand;
               break;
             case 2:
               $sender->sendMessage($this->getConfig()->get("msg-survival"));
-              $sender->addTitle("§eSurvival mode", "§fSurvival mode is enable");
-              $sender->setGamemode(0);
+              $sender->addTitle("§eSell All", "§fSell all of the chosen block");
+              $sender->sell all;
               break;
             case 3:
               $sender->sendMessage($this->getConfig()->get("msg-adventure"));
-              $sender->addTitle("§eAdventure mode", "§fAdventure mode is enable");
-              $sender->setGamemode(2);
+              $sender->addTitle("§eSell Inv", "§fSell everything");
+              $sender->sell inv;
               break;
             case 4:
               $sender->sendMessage($this->getConfig()->get("msg-spectator"));
-              $sender->addTitle("§eSpectator mode", "§fSpector mode is enable");
-              $sender->setGamemode(3);
+              $sender->addTitle("§eShop", "§fBuy items");
+              $sender->shop;
               default:
                 return;
                 }
            }
           });
           $form->setTitle($this->getConfig()->get("Title"));
-          $form->addDropdown("Menu", ["Exit", "Sell Hand", "Sell Ores", "sell Inventory", "Shop"]);
+          $form->addDropdown("Menu", ["Exit", "Sell Hand", "Sell all", "sell Inventory", "Shop"]);
           $form->sendToPlayer($sender);
       } else {
         $sender->sendMessage($this->getConfig()->get("msg-no-perm"));
