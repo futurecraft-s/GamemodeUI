@@ -1,8 +1,8 @@
-name: GamemodeUI
-main: GamemodeUI\Main
-author: Misael38
+name: Sell
+main: Sell\Main
+author: Bronzehail
 version: 1.0
 api: [3.0.0]
 commands:
- gmui:
-  description: GamemodeUI main command! 
+ sellui:
+  description: sell  your items! 
